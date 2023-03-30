@@ -1,0 +1,248 @@
+
+*,:after,:before{box-sizing:border-box}
+.submit_Btn1{
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius:25px;
+}
+.moredescription-wrap{
+	width:100%;
+	margin:auto;
+	max-width:510px;
+	min-height:670px;
+	position:relative;
+}
+.moredescription-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:70px 20px 30px 20px;
+	
+}
+.moredescription-html .moredescription-in-htm,
+.moredescription-html .moredescription-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.moredescription-html .moredescription-in,
+.moredescription-html .moredescription-up,
+.moredescription-form .moredescriptiongroup .check{
+	display:none;
+}
+.moredescription-html .tab,
+.moredescription-form .moredescriptiongroup .label,
+.moredescription-form .moredescriptiongroup .button{
+	text-transform:uppercase;
+}
+.moredescription-html .tab{
+	font-size:18px;
+	margin-right:15px;
+	padding-bottom:2%;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.moredescription-html .moredescription-in:checked + .tab,
+.moredescription-html .moredescription-up:checked + .tab{
+	color:#A8BE96;
+	border-color:#615959;
+}
+.moredescription-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.moredescription-form .group{
+	margin-top: 1%;
+	margin-bottom:1%;
+}
+.moredescription-form .group .label,
+.moredescription-form .group .input,
+.moredescription-form .group .button{
+	width:100%;
+	color:#615959;
+	outline: none;
+}
+.moredescription-form .group .input,
+.moredescription-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:#A8BE96;
+}
+.moredescription-form .group input[data-type="password"]{
+	
+	-webkit-text-security:circle;
+}
+.moredescription-form .group .label{
+	color: #615959;
+	font-size:12px;
+}
+.moredescription-form .group .button{
+	background:#FFEBA5;
+    font-weight:bolder;
+    font-size: 18px;
+    margin-top: 5%;
+	color: #615959;
+    border-radius:50px;
+    padding:15px 20px;
+	
+}
+
+.moredescription-form .group .button:active{
+	transform: translateY(4px);
+}
+
+
+.moredescription-form .group .check:checked + label{
+	color:rgb(100, 182, 133);
+}
+.moredescription-form .group .check:checked + label .icon{
+	background:#eda656;
+}
+.moredescription-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.moredescription-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.moredescription-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.moredescription-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+
+.input{
+	background-color: #A8BE96;
+}
+
+
+
+
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: right;
+  margin: 24px 0 12px 0;
+  position: relative;
+  margin: 3% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+  
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #F4F9EB;
+  margin: 3% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 90%; /* Could be more or less, depending on screen size */
+  height: 80%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+.moredescription_image{
+border-radius: 5px;
+}
+
+.mdcname{
+    align-content: center;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+    .modal-content{
+        width: 40%;
+      }
+    .login-html{
+        padding:90px 70px 50px 70px;
+        
+    }
+}

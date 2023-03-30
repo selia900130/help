@@ -1,0 +1,65 @@
+.yourname{
+ border-radius: 4px;
+}
+
+.up2{
+    background-color: #A8BE96;
+}
+
+.up3{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    justify-content: left;
+    align-items: left;
+    padding-top: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 50%;
+}
+
+.up4{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+    background-color: rgb(150, 116, 116);
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    justify-content: left;
+    align-items: left;
+    padding-top: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 50%;
+}
+
+
+
+
+.repo2{
+    size:100%;
+}
+
+.notice{
+    color:rgb(68, 42, 11);
+}
+
+.response{
+    font-size: 25px;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    color: white;
+}
+

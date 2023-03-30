@@ -1,0 +1,219 @@
+*{box-sizing: border-box;}
+body{
+    font-family: "Merriweather Sans",sans-serif;
+    margin:0;
+}
+
+figure{
+    margin:0;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrap{
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+    overflow-x: auto;
+    padding-inline: 6vmin;
+    padding-block: 12;
+    gap: 3vmin;
+    scroll-snap-type: x mandatory;
+}
+
+.straydog-card{
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.801);
+    width:90vw ;
+    height:150vw;
+    box-shadow: 0 20px 40px rgba(0 0 0 / 20%);
+    padding: 1.2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.straydog-card_status{
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.straydog-card_name{
+    font-size:2rem;
+    margin-block: 0.5rem;
+}
+
+.straydog-card_description{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.straydog-card_footer{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.straydog-card_text{
+    font-size: 0.7rem;
+    color: #333;
+}
+.straydog-card_image{
+    margin-bottom: 10px;
+}
+
+.ad1{
+margin-bottom: 5px;
+}
+
+
+.condtion-card{
+    background-color: rgb(255, 255, 255);
+    width:97vw ;
+    height:20vw;
+    box-shadow: 0 2px 40px rgba(0 0 0 / 15%);
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+    }
+
+
+
+
+.hashtag{
+    display: inline;
+    width: 50%; 
+    padding: 5px; 
+    text-align: center;
+    background-color: #ebe3ca;
+    border-radius: 4px;
+}
+
+.hashtagtext{
+   
+}
+
+.progress{
+    margin-top: 20px;
+}
+
+.progress-bar{
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(145, 93, 38);
+   color:rgb(255, 255, 255);
+}
+
+.mdname{
+    
+    text-align: center;
+    font-size: 30px;
+}
+
+.md_location{
+    margin-left: 20px;
+}
+.location_icon{
+    display: inline;
+}
+.relativelocation{
+    display: inline;
+    font-size: 20px;
+}
+.moredescrition{
+    margin-left: 10px;
+    margin-top: 20px;
+    color: gray;
+}
+
+.dogg{
+    margin-top: 20px;
+    margin-left: 32px;
+}
+
+.dogyear{
+    margin-left: 15px;
+    font-size: 30px;
+    margin-right: 15px;
+}
+.dogsex{
+    margin-left: 15px;
+    font-size: 30px;
+    margin-right: 15px;
+}
+.dogweight{
+    margin-left: 15px;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.dogg2{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.dogyear2{
+    margin-left: 15px;
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(192, 164, 72);
+}
+.dogsex2{
+    margin-left: 15px;
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(192, 164, 72);
+}
+
+.dogweight2{
+    margin-left: 25px;
+    font-size: 22px;
+    margin-right: 15px;
+    color: rgb(192, 164, 72);
+}
+.dogg3{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.dogchip1{
+    margin-left: 15px;
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+}
+.dogligation1{
+    margin-left: 15px;
+    font-size: 22px;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.dogvaccine1{
+    margin-left: 25px;
+    font-size: 22px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+}
+.takemehome{
+    margin-top: 20px;
+    margin-left: 40px;
+   
+}
+
+.takemehomebutn{
+    border-radius: 15px;
+    width: 180px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.heartbutn{
+    border-radius: 15px;
+    width: 50px;
+    height: 40px;
+}
