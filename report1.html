@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/upload.css">
+    <title>一汪無際No Way Home</title>
+</head>
+<header>
+    <input type="checkbox" name="" id="menu_control">
+
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <span>一汪無際:No Way Home</span> 
+            </a>
+            <img src="img/logo.png" alt="">
+        </h1>
+        <label for="menu_control" class="menu_btn">
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="find.html">尋找浪浪</a>
+            <a href="reserve.html">預約志工</a>
+            <a href="report.html">通報上傳</a>
+            <a href="profile.html">個人檔案</a>
+        </nav>
+        <button class="exit"   onclick="document.getElementById('id01').style.display='block'">登出</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+            <div class="login-wrap" >
+                    <div class="login-html">
+                        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">登出</label>
+                        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">註冊</label>
+                        <div class="login-form">
+                            
+                            <div class="sign-in-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Email</label>
+                                    <input id="user" type="email" class="input" name="user" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                <a href="dog.html"> 
+                                    <input type="submit" class="button" value="登出">
+                                </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sign-up-htm">
+                                <div class="group">
+                                    <label for="user" class="label">Username</label>
+                                    <input id="user" type="text" class="input" name="name" required='required'>
+                                </div>
+                                <div class="group">
+                                    <label for="pass" class="label">Password</label>
+                                    <input id="pass" type="password" class="input" data-type="password" name="pwd" required='required'>
+                                </div>
+                                
+                                <div class="group">
+                                    <label for="pass" class="label">Email Address</label>
+                                    <input id="email" type="email" class="input" name="email" required='required'>
+                                </div>
+                                <div class="group">
+                                    <input type="submit" class="button" value="註冊">
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+</header>
+<body>
+    
+    <div class="up2">
+        <form class="repo2">
+
+            <div class="ti">
+            <label>通報類別：</label>
+            <label><input type="radio" name="report" value="general" required>一般通報</label>
+            <label><input type="radio" name="report" value="urgent">緊急通報</label></div>
+
+
+        <p class="ww">犬種：
+        <select class="variety" required>
+            <option>貴賓</option>
+            <option>米克斯</option>
+            <option>馬爾濟斯</option>
+            <option>雪納瑞</option>
+            <option>柴犬</option>
+            <option>柯基</option>
+            <option>吉娃娃</option>
+            <option>臘腸</option>
+            <option>博美</option>
+            <option>哈士奇</option>
+            <option>拉布拉多</option>
+            <option>蝴蝶犬</option>
+            <option>巴哥</option>
+            <option>西施犬</option>
+            <option>鬆獅犬</option>
+            <option>黃金獵犬</option>
+            <option>薩摩耶</option>
+            <option>阿拉斯加犬</option>
+            <option>約克夏</option>
+            <option>牛頭㹴</option>
+            <option>其他</option>
+            <option>不明</option>
+        </select></p>
+
+            <p class="ww">情況：
+            <input type="text" name="state" class="state" placeholder="精神、明顯外傷位置或其他特殊狀況..." required ></p>
+
+            <p class="ww">
+                <INPUT class="loca_btn" TYPE="button" value='出沒位置' onclick="reP()">
+            <img src="img/map.png" id="oImg" class="mm">
+
+
+            <center>
+                <input type="button" class="next" onclick="showalert()" value="提交" />
+                <div id="current_date" class="tii"></div>
+
+            </center>
+        </form></div>
+
+
+
+</body>
+
+
+
+<script>
+
+    l = document.getElementById('id01');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<!--位置-->
+<script>
+	function reP(){
+	document.getElementById('oImg').style.display = "block";
+	}
+    </script>
+
+<!--時間-->
+<script>
+    date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    hours = date.getHours();
+    minutes = date.getMinutes();
+
+    document.getElementById("current_date").innerHTML = "通報時間：" + year + "/" + month + "/" + day + "    " + hours + ":" + minutes;
+</script>
+
+
+<script>
+function showalert(){
+    alert("已收到您的緊急通報資料，我們會立即處理。");
+  }
+  
+</script>
+</html>
+
